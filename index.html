@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Color Scheme Generator</title>
+</head>
+<body>
+<div class="container">
+    <h1>Color Scheme Generator</h1>
+    Select A Color:<input type="color" id="colorPicker">
+    <select id="colorSchemeType">
+        <option value="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Monochrome-dark</option>
+        <option value="monochrome-light">Monochrome-light</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic-complement</option>
+        <option value="triad">Triad</option>
+    </select>
+    <button onClick="generateColorScheme()">Get Color Scheme</button>
+    <!-- Color containers for 6 colors -->
+    <div id="colorPanel">
+        <div class="color-container">
+            <div class="color-box"></div>
+            <div class="color-code"></div>
+        </div>
+        <div class="color-container">
+            <div class="color-box"></div>
+            <div class="color-code"></div>
+        </div>
+        <div class="color-container">
+            <div class="color-box"></div>
+            <div class="color-code"></div>
+        </div>
+        <div class="color-container">
+            <div class="color-box"></div>
+            <div class="color-code"></div>
+        </div>
+        <div class="color-container">
+            <div class="color-box"></div>
+            <div class="color-code"></div>
+        </div>
+        <div class="color-container">
+            <div class="color-box"></div>
+            <div class="color-code"></div>
+        </div>
+    </div>
+    </div>
+    <!-- End of color containers -->
+
+    <script src="index.js"></script>
+</body>
+</html>
